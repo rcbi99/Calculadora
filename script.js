@@ -1,4 +1,4 @@
-// Función para calcular la hidratación basal usando el método de Holliday-Segar
+
 function calcularHidratacionBasal(peso) {
     let volumenDiario = 0;
     if (peso <= 10) {
@@ -18,7 +18,7 @@ function calcularHidratacionBasal(peso) {
     };
 }
 
-// Función para calcular la superficie corporal
+
 function calcularSuperficieCorporal(peso) {
     const superficieCorporal = ((peso * 4) + 7) / (peso + 90);
     const volumenDiario1500 = superficieCorporal * 1500;
@@ -30,7 +30,7 @@ function calcularSuperficieCorporal(peso) {
     };
 }
 
-// Función para mostrar los resultados en el HTML
+
 function mostrarResultados() {
     const pesoInput = document.getElementById('peso');
     const errorMensaje = document.getElementById('error');
@@ -57,6 +57,6 @@ function mostrarResultados() {
     }
 }
 
-// Evento al hacer clic en el botón "Calcular"
+
 const calcularButton = document.getElementById('calcular');
 calcularButton.addEventListener('click', mostrarResultados);
