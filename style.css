@@ -8,14 +8,12 @@ body{
     width: 900px;
     height: 500px;
     text-align: center;
-    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
     position: absolute;
     inset: 0;
     margin: auto;
 }
 #calculadora{
-    background: white;
-    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    background: rgb(255, 255, 255);
     width: 50%;
     height: 100%;
     float: left;
@@ -23,14 +21,12 @@ body{
 
 #detalle{
     background: #FF416C;
-    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
     color: #f6f5f7;
 }
 .contenido{
-    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -45,26 +41,34 @@ input {
 }
 
 button {
-  font-size: 15px;
-	font-weight: bold;
-	padding: 12px 45px;
-	border-radius: 30px;
-	background-color: #FF416C;
-	border: 1px solid #FF416C;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	transition: transform 20ms ease-in;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 45px;
+    border-radius: 30px;
+    background-color: #FF416C;
+    border: 1px solid #FF416C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 20ms ease-in, box-shadow 300ms ease-in-out; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); 
+}
+
+button:hover {
+    background-color: #FF6B8B;
+    border: 1px solid #FF6B8B;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3); 
 }
 
 button:active {
-	transform: scale(0.95);
+    transform: scale(0.95);
+    background-color: #FF416C;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 #contenedor{
   width: 900px;
   height: 500px;
   text-align: center;
-  /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
   position: absolute;
   inset: 0;
   margin: auto;
@@ -72,4 +76,26 @@ button:active {
   overflow: hidden; 
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
     0 10px 10px rgba(0,0,0,0.22);
+}
+input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #FF6B8B;
+    border: 1px solid #FF6B8B;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #FF416C;
+}
+.resultado {
+    font-weight: bold;
+    color: #185c29;
+    font-size: 18px;
+    margin-top: 10px;
 }
